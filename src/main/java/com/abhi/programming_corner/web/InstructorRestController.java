@@ -42,7 +42,7 @@ public class InstructorRestController {
     }
 
     @GetMapping("/{instructorId}/courses")
-    @PreAuthorize("hasANyAuthority('Admin','Instructor')")
+    @PreAuthorize("hasAnyAuthority('Admin','Instructor')")
     public Page<CourseDTO> coursesByInstructorId(@PathVariable Long instructorId,
                                                  @RequestParam(name = "page", defaultValue = "0") int page,
                                                  @RequestParam(name = "size", defaultValue = "5") int size) {

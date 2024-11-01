@@ -1,7 +1,7 @@
 package com.abhi.programming_corner.constant;
 
 public class JWTUtil {
-    public static final long EXPIRE_ACCESS_TOKEN = 1 * 60 * 1000;
+    public static final long EXPIRE_ACCESS_TOKEN = 5 * 60 * 1000;
 
     public static final long EXPIRE_REFRESH_TOKEN = 120 * 60 * 1000;
 
